@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    overflow: scroll;
+    background: no-repeat center/cover url("../img/abstrait-degrade-gris.jpg");
+    font-family: 'Times New Roman', Times, serif;
+}
+main {
+    overflow: auto;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+section {
+    width: 90vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.photoImpots, .photoImprimate, .photoHorloge, .photoBillets, .photoOrdinateur, .photoTarif {
+    width: 120px;
+}
+#reactionPersonneTriste {
+    position: absolute;
+    top: 230px;
+    width: 200px;
+    height: 100px;
+}
+#reactionPersonneHeureuse {
+    position: absolute;
+    right: 250px;
+    top: 200px;
+    width: 200px;
+    height: 100px;
+}
+#imageBillet10 {
+    position: absolute;
+    top: 130px;
+    right: 500px;
+}
+#nombreBilletsDixARendre {
+    position: absolute;
+    top: 130px;
+    right: 800px;
+    width: 150px;
+}
+#imageBillet5 {
+    position: absolute;
+    top: 300px;
+    right: 500px;
+}
+#nombreBilletsCinqARendre {
+    position: absolute;
+    top: 300px;
+    right: 800px;
+    width: 150px;
+}
+#imagePiece1 {
+    position: absolute;
+    top: 480px;
+    right: 550px;
+}
+#nombrePiecesUnEuroARendre {
+    position: absolute;
+    top: 480px;
+    right: 800px;
+    width: 150px;
+}
+

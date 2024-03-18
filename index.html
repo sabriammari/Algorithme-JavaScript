@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    <title>Exercices Java Algorithme</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse bg-dark rounded-2 justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#exercice1">Exercice 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#exercice2">Exercice 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#exercice3">Exercice 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#exercice4">Exercice 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#exercice5">Exercice 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#exercice6">Exercice 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#commentaires">Commentaires</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <section id="accueil" class="text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="border border-3 border-dark rounded-2 fs-1 fw-bold py-2 px-5">
+                    <p>TRAVAIL EN GROUPE</p>
+                    <p>EXERCICES D'ALGORITHME AVEC JAVASCRIPT</p>
+                </div>
+                <div class="mt-5 fs-2">
+                    <h2 class="text-decoration-underline fw-bold">GROUPE</h2>
+                    <p>Stephanie FONTES</p>
+                    <p>Aziza AÏT-LAHCEN</p>
+                    <p>Sabri AMMARI</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="exercice1" class="mt-5 pt-5 text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="container d-flex flex-column justify-content-center">
+                    <h1 class="mt-2 mx-auto px-5 bg-dark bg-opacity-75 text-white rounded-2">EXERCICE 1</h1>
+                    <p class="mb-2 mx-auto px-3 bg-dark-subtle fs-2 p-2 text-dark bg-opacity-50 rounded-2">Impôts à Zorglub</p>
+                    <img src="img/impots-tampon.png" class="photoImpots pt-2 pb-3 mx-auto" alt="Photos d'une feuille blanche tamponnée Impots en rouge">
+                </div>
+                <div class="container justify-content-center">
+                    <div class="my-2 mx-3 flex-column text-center pt-3">
+                        <div class="my-auto justify-content-center">
+                            Quel est votre âge ?
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input id="ageZorglubien" class="form-control" type="number" step="1" name="ageZorglubien" value="0" min="0" max="120">
+                        </div>
+                        <div id="resultatAge" class="mt-2 fs-5"></div>
+                    </div>
+                    <div class="my-3">
+                        <p class="my-2">Quel est votre sexe ?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="radioInline" id="sexeHomme">
+                            <label class="form-check-label" for="sexeHomme">Homme</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="radioInline" id="sexeFemme" checked="">
+                            <label class="form-check-label" for="sexeFemme">Femme</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                    <div>
+                        <button id="btnRedevable" type="submit" class="btn btn-secondary btn-outline-primary text-white btn-lg mb-3">Vérifier</button>
+                    </div>
+                    <div id="resultatImposable" class="mx-auto">
+                    </div>
+                </div>
+            </div>
+            <div id="reactionPersonneHeureuse">
+            </div>
+            <div id="reactionPersonneTriste">
+            </div>
+        </section>
+        <hr>
+        <section id="exercice2" class="mt-5 pt-5 text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div>
+                    <h1 class="mt-2 mx-auto px-5 bg-dark bg-opacity-75 text-white rounded-2">EXERCICE 2</h1>
+                    <p class="mb-2 mx-auto px-3 bg-dark-subtle fs-2 p-2 text-dark bg-opacity-50 rounded-2">Reprographie</p>
+                    <img src="img/imprimanteMultifonction.jpg" class="photoImprimate pt-2 pb-3 mx-auto" alt="Photo d'une salle remplie d'imprimantes professionnelles">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="mx-auto pt-2">
+                        <p class="fs-5">Combien de photocopies voulez-vous effectuer ?</p>
+                        <input id="nbPhotocopies" class="" type="range" step="1" name="Range" value="0" min="0" max="60">
+                        <div id="resultatNbPhotocopies" class="fs-5"></div>
+                        <button id="btnPrixPhotocopies" type="submit" class="btn btn-secondary btn-outline-primary text-white btn-lg my-4">Facturation</button>
+                        </div>
+                        <div id="prixTotalPhotocopies" class="mx-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="exercice3" class="mt-5 pt-5 text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <h1 class="mt-2 mx-auto px-5 bg-dark bg-opacity-75 text-white rounded-2">EXERCICE 3</h1>
+                <p class="mb-2 mx-auto px-3 bg-dark-subtle fs-2 p-2 text-dark bg-opacity-50 rounded-2">La seconde suivante</p>
+                <img src="img/horlogeMurale.jpg" class="photoHorloge py-3" alt="Photos d'une horloge murale">
+                <div class="container justify-content-center">
+                    <div class="fs-5">
+                        Quelle heure souhaitez-vous indiquer ?
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <input id="heureChoisie" type="number" class="form-control" name="heureChoisie" min="0" max="23" value="12">
+                        </div>
+                        <div class="col-1 my-auto">:
+                        </div>
+                        <div class="col-2">
+                            <input id="minuteChoisie" type="number" class="form-control" name="minuteChoisie" min="0" max="59" value="30">
+                        </div>
+                        <div class="col-1 my-auto">:
+                        </div>
+                        <div class="col-2">
+                            <input id="secondeChoisie" type="number" class="form-control" name="secondeChoisie" min="0" max="59" value="30">
+                        </div>
+                    </div>
+                    <div class="my-1 fs-5" id="resultatHeureChoisie">
+                    </div>
+                </div>
+                <div>
+                    <button id="btnSecondeApres" type="submit" class="btn btn-secondary btn-outline-primary text-white btn-lg my-2">La seconde d'après</button>
+                </div>
+                <div id="heureSecondeApres">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="exercice4" class="mt-5 pt-5 text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <h1 class="mt-2 mx-auto px-5 bg-dark bg-opacity-75 text-white rounded-2">EXERCICE 4</h1>
+                <p class="mb-2 mx-auto px-3 bg-dark-subtle fs-2 p-2 text-dark bg-opacity-50 rounded-2">Le change</p>
+                <img src="img/monnaie-billet.png" class="photoBillets py-3" alt="Photos de billets et de pièces en euros">
+                <div class="container justify-content-center">
+                    <div class="row my-2 align-items-center text-center">
+                        <div class="my-auto fs-5 col-7 text-end">Votre facture s'élève à :</div>
+                        <div class="my-auto col-3 ">
+                            <input id="montantFacture" type="number" class="form-control" min="0" value="20">
+                        </div>
+                        <div class="my-auto fs-5 col-1 text-start">€</div>
+                    </div>
+                    <div class="row my-2 align-items-center text-center">
+                        <div class="my-auto col-7 fs-5 text-end">Montant donné par le client :</div>
+                        <div class="my-auto col-3">
+                            <input id="montantDonne" type="number" class="form-control" min="0" value="46">
+                        </div>
+                        <div class="my-auto fs-5 col-1 text-start">€</div>
+                    </div>
+                </div>
+                <button id="btnMonnaieARendre" type="submit" class="btn btn-secondary btn-outline-primary text-white btn-lg mb-2">Votre monnaie</button>
+                <div id="montantARendre" class="">
+                </div>
+                <button id="btnRepartitionMonnaie" type="submit" class="btn btn-secondary btn-outline-primary text-white btn-lg mb-5">Monnaie à rendre</button>
+                <div class="d-flex flex-row">
+                    <div id="nombreBilletsDixARendre" class="col-2 mt-3">
+                    </div>
+                    <div id="imageBillet10" class="col">
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div id="nombreBilletsCinqARendre" class="col-2 mt-3">
+                    </div>
+                    <div id="imageBillet5" class="col">
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div id="nombrePiecesUnEuroARendre" class="col-2 mt-4">
+                    </div>
+                    <div id="imagePiece1" class="col">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="exercice5" class="mt-5 pt-5 text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <h1 class="mt-2 mx-auto px-5 bg-dark bg-opacity-75 text-white rounded-2">EXERCICE 5</h1>
+                    <p class="mb-2 mx-auto px-3 bg-dark-subtle fs-2 p-2 text-dark bg-opacity-50 rounded-2">Validité d'un email</p>
+                    <img src="img/ordinateurArobase.jpg" class="photoOrdinateur py-3" alt="Photo d'un ordinateur portable avec un arobase au centre de l'écran">
+                <div class="flex-column justify-content-center">
+                    <div>
+                    <input id="adresseMail" type="text" class="form-control my-3" name="adresseMail" placeholder="Entrer un email">
+                    </div>
+                    <div id="emailValide">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="exercice6" class="mt-5 pt-5 text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <h1 class="mt-2 mx-auto px-5 bg-dark bg-opacity-75 text-white rounded-2">EXERCICE 6</h1>
+                <p class="mb-2 mx-auto px-3 bg-dark-subtle fs-2 p-2 text-dark bg-opacity-50 rounded-2">Tarif Souscription Assurance</p>
+                <img src="img/Logo-tarifs.jpg" class="photoTarif py-3" alt="Photo d'un carré en 3d marqué € et tarifs">
+                <div class="container justify-content-center">
+                    <div class="row my-2 mx-3 align-items-center text-center">
+                        <p class="col-10 my-auto fs-5">Quel âge avez-vous ?</p>
+                        <input id="ageConducteur" type="number" class="form-control col" name="ageConducteur" min="0" placeholder="18">
+                    </div>
+                    <div class="row my-2 mx-3 align-items-center text-center">
+                        <p class="col-10 my-auto fs-5">Le nombre d'années de permis :</p>
+                        <input id="anneePermis" type="number" class="form-control col" name="anneePermis" min="0" placeholder="0">
+                    </div>
+                    <div class="row my-2 mx-3 align-items-center text-center text-nowrap">
+                        <p class="col-10 my-auto fs-5">Le nombre d'accidents responsables :</p>
+                        <input id="nbAccidents" type="number" class="form-control col" name="nbAccidents" min="0" placeholder="0">
+                    </div>
+                    <div class="row my-2 mx-3 align-items-center text-center">
+                        <p class="col-10 my-auto fs-5">Le nombre d'années de fidélité :</p>
+                        <input id="anneeFidelite" type="number" class="form-control col" name="anneeFidelite" min="0" placeholder="0">
+                    </div>
+                </div>
+                <button id="btnTarifAssurance" type="submit" class="btn btn-secondary btn-outline-primary text-white mx-auto btn-lg mb-2">Tarif de l'assurance</button>
+                <div id="malusTotal" class="">
+                </div>
+                <div id="tarifAssurance" class="">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="commentaires" class="text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <a href="assets/PDF_SYNTHESE_EXERCICES_JAVASCRIPT_GROUPE_6.docx" target="_blank" class="fs-3">Synthèse du groupe</a>
+                <div class="fst-italic fs-1 pt-3">
+                    <h2>"Je remercie Stéphanie et Aziza pour le travail que nous avons fourni tout les trois, pendant ces 4 jours."</h2>
+                    <h2>"Ce moment passé ensemble fût agréable pour moi."</h2>
+                </div>
+                <p class="pt-5 fs-3 fw-bold">Sabri AMMARI</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
